@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Survey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+        
+</head>
+
+<body>
+    <div ckass="overlay">
+        <div class="header_block">
+            <h1>Library Survey</h1>
+            <p>Help us improve your local library</p>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="form_container">
+            <div class="details_form">
+
+                <i class="bi bi-person-fill"></i>
+
+                <h3>Personal details</h3>
+                <div class="detail_block">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="detail_input">
+                </div>
+                
+                <div class="detail_block">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="detail_input">
+                </div>
+                <div class="detail_block">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" placeholder="Enter your age" class="detail_input">
+                </div>
+                
+            </div>
+
+            <div class="library_form">
+
+                
+                <i class="bi bi-clipboard"></i>
+                <h3>General information</h3>
+                
+
+                <div>
+                    <label for="frequency" class="question">How often do you visit the library?</label>
+                    <div class="select">
+                        <select id="frequency" name="frequency">
+                            <option value="">Select</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="rarely">Rarely</option>
+                        </select>
+
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    <label class="question">When you visit, are you usually able to find what you are looking for?</label>
+                    <div>
+                        <input type="radio" id="always" name="find" value="always">
+                        <label for="always">Always</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sometimes" name="find" value="sometimes">
+                        <label for="sometimes">Sometimes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="rarely" name="find" value="rarely">
+                        <label for="rarely">Rarely</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="never" name="find" value="never">
+                        <label for="never">Never</label>
+                    </div>
+                    
+                </div>
+                
+                <div class="checkbox">
+                    <label class="question">Please check all the reasons you visit the library</label>
+                    <div>
+                        <input type="checkbox" id="checkout" name="reason" value="checkout">
+                        <label for="checkout">To checkout</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="computers" name="reason" value="computers">
+                        <label for="computers">To use computers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="recommendation" name="reason" value="recommendation">
+                        <label for="recommendation">To get a book recommendation</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="research" name="reason" value="research">
+                        <label for="research">To do research</label>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    <label for="improvements" class="question">Anything you would like to see improve?</label>
+                    <textarea id="improve" name="improvements" rows="6" placeholder="Type here" class="text_area"></textarea>
+                </div>
+                
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

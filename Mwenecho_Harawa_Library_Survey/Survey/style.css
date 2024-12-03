@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin: none;
+    padding: none;
+}
+
+.overlay{
+    background-color: #127EB8;
+    opacity: 0.48;
+
+}
+.header_block{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+
+    width: 95%;
+    background-image: url(header_background.jpg);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-size: 23px;
+    text-align: center;
+}
+.form_container{
+    width: 95%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    padding: none;
+    margin: none;
+}
+.details_form{
+
+    width: 30%;
+    padding-bottom: 30px;
+    background-color:  #127EB8;
+    border-radius: 20px;
+    color: white;
+    max-width: 400px;
+    height: max-content;
+    border-color: solid #F5F5F5;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin: none;
+
+}
+
+.detail_block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+    
+}
+
+.detail_input{
+    
+    border-radius: 5px;
+    background-color:  #127EB8;
+    color: #F5F5F5;
+    border:solid 2px white;
+}
+
+.library_form{
+    width: 60%;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    border-color:solid #F5F5F5;
+    box-shadow: 0px 0px 7px 0px #9a9a9a;
+    padding: 20px;
+
+}
+
+
+i{
+    display: flex;
+    justify-self: center;
+    font-size: 48px;
+
+}
+.library_form i {
+    color: #127EB8;
+}
+.question{
+    font-weight: bold;
+}
+
+.detail_block input, .detail_block input:focus{
+    font-size: 15px;
+    height: 2rem;
+    outline: none;
+    padding-left: 10px;
+}
+.detail_block input::placeholder{
+    color: rgb(201, 201, 201);
+    font-weight: lighter;
+}
+select, select:focus{
+    border-radius: 5px;
+    background-color:  #FFFFFF;
+    color: rgba(0,0,0, 0.41);
+    border:solid 2px rgba(0,0,0, 0.41);
+    font-size: 15px;
+    height: 2rem;
+    width: 80%;
+    outline: none;
+}
+
+.select{
+    width: 80%;
+}
+textarea, textarea:focus{
+    width: 100%;
+    outline:none;
+    border-radius: 10px;
+    resize:none;
+    font-family:'Poppins', sans-serif;
+}
+.button{
+    display: flex;
+    justify-self: center;
+    background-color:#127EB8;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 4px;
+    width: 50%;
+    justify-content: center;
+}
