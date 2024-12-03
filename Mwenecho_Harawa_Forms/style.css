@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(22, 170, 170), black);
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    margin: none;
+}
+.container{
+    background-color: rgb(192, 246, 246);
+    color: rgb(11, 43, 43);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 20px 2px grey;
+    max-width: 600px;
+    min-width: 300px;
+    height: max-content;
+    margin-top: 30px;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.input_box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input_field{
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: aquamarine;
+    padding-left: 10px;
+    color: rgb(11, 43, 43);
+    height: 1.5rem;
+
+}
+
+.text_area{
+    max-width: 580px;
+    width: 98%;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: aquamarine;
+    padding-left: 10px;
+
+}
+
+.submit, .button{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: aquamarine;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(11, 43, 43);
+    color: white;
+    height: 30px;
+    width: 90px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.submit:hover, .button:hover{
+    background-color: white;
+    color: rgb(11, 43, 43);
+}
+a{
+    text-decoration: none;
+}
+.prompt_box{
+    font-size: 16px;
+    padding: none;
+    margin-top: 100px;
+}

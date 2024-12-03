@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h3>T3CH SAVVY FORM</h3>
+            <p>This form was made with the intention of understanding how tech savvy individuals are.</p>
+            
+            <div class="input_box">
+                <label for="user_first_name">First Name</label>
+                <input type="text" class="input_field" name="user_first_name" placeholder="Enter your first name" required>
+            </div>
+            
+            <div class="input_box">
+                <label for="user_name">Last Name</label>
+                <input type="text" class="input_field" name="user_last_name" placeholder="Enter your last name" required>
+            </div>
+            
+
+            <label for="electronics_knowledge">Do you know Electronics</label>
+            <div class="check_box">
+                <input type="radio" name="electronics_knowledge">
+                <label>Yes</label>
+            </div>
+            <div class="check_box">
+                <input type="radio" name="electronics_knowledge">
+                <label>No</label>
+            </div>
+            
+
+            <label>How confident are you in your tech knowledge?</label>
+            <div class="check_box">
+                <input type="radio" name="knowledge_confidence">
+                <label>Very confident</label>
+            </div>
+            <div class="check_box">
+                <input type="radio" name="knowledge_confidence">
+                <label>Fairly confident</label>
+            </div>
+            <div class="check_box">
+                <input type="radio" name="knowledge_confidence">
+                <label>Not confident</label>
+            </div>
+            
+            <div class="check_box">
+                <input type="radio" name="knowledge_confidence">
+                <label>I don't know</label>
+            </div>
+            
+            
+            <div class="input_box">
+                <label for="computer_definition">What do you define as a computer</label>
+                <textarea placeholder="computer definition" name="computer_definition"" class="text_area" cols="1" rows="5" ></textarea>
+            </div>
+            
+
+            <label for="microcontroller_knowledge">Do you know microcontrollers? if yes, define them</label>
+            <div class="check_box">
+                <input type="radio" name="microcontroller_knowledge">
+                <label>Yes</label>
+                <textarea placeholder="microcontroller description" name="microcontroller_knowledge" class="text_area" cols="1" rows="5" ></textarea>
+            </div>
+            <div class="check_box">
+                <input type="radio" name="microcontroller_knowledge">
+                <label>No</label>
+            </div>
+            
+
+
+            <label for="p_language">How many of the following Languages do you know?</label>
+            <div class="check_box">
+                <input type="checkbox" name="p_language">
+                <label>JavaScript</label>
+            </div>
+            <div class="check_box">
+                <input type="checkbox" name="p_language">
+                <label>Python</label>
+            </div>
+            <div class="check_box">
+                <input type="checkbox" name="p_language">
+                <label>JAVA</label>
+            </div>
+            <div class="check_box">
+                <input type="checkbox" name="p_language">
+                <label>C++</label>
+            </div>
+            <div class="check_box">
+                <input type="checkbox" name="p_language">
+                <label>Dart</label>
+            </div>
+
+            <label for="favorite_language">Favorite Programming Language: </label>
+            <select class="input_field" name="favorite_language" id="favorite_language" aria-placeholder="something" >
+                <option value=""></option>
+                <option value="JavaScrit">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="JAVA">JAVA</option>
+                <option value="none">none</option>
+            </select>
+
+            <div>
+                <label for="project_description">Major Project</label>
+                <textarea placeholder="Please give a brief description of one major prject" name="project_description" class="text_area" cols="1" rows="5" ></textarea>
+            </div>
+            <input class="submit" type="submit">
+            
+        </form>
+    </div>
+    
+</body>
+</html>
