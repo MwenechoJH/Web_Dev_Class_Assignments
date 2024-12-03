@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-self: center;
     flex-direction: column;
-
+    box-sizing:border-box;
     width: 95%;
     background-image: url(header_background.jpg);
     border-radius: 10px;
@@ -43,7 +43,7 @@ h3{
     margin: none;
 }
 .details_form{
-
+    box-sizing: border-box;
     width: 30%;
     padding-bottom: 30px;
     background-color:  #127EB8;
@@ -75,6 +75,7 @@ h3{
 }
 
 .library_form{
+    box-sizing: border-box;
     width: 60%;
     background-color:  #FFFFFF;
     border-radius: 10px;
@@ -139,4 +140,29 @@ textarea, textarea:focus{
     padding: 4px;
     width: 50%;
     justify-content: center;
+}
+
+@media (max-width:600px) {
+    body{
+        font-size: 10px;
+    }
+    .form_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .details_form, .library_form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    .detail_block input, .detail_block input:focus, select, select:focus, #improve{
+        font-size: 10px;
+    }
+
+    
 }
