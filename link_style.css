@@ -83,10 +83,10 @@ ul{
 
 @media (max-width:800px) {
     body{
-        padding-top:none;
+        padding-top:0px;
         width: 100%;
-        margin: none;
-        padding: none;
+        margin: 0px;
+        padding: 0px;
     }
     .n_body{
         box-sizing: border-box;
@@ -107,7 +107,7 @@ ul{
     }
     .container, .details_container{
         box-sizing: border-box;
-        width: 95%;
+        width: 100%;
     }
     
 }
