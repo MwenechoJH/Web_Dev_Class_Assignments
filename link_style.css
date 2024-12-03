@@ -98,5 +98,8 @@ ul{
     p{
         font-size: 13px;
     }
+    .container, .details_container{
+        width: 100vw;
+    }
     
 }
