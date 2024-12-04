@@ -17,13 +17,12 @@ body{
     justify-self: center;
     flex-direction: column;
     box-sizing:border-box;
-    width: 95%;
+    width: 100%;
     background-image: url(header_background.jpg);
-    border-radius: 10px;
     text-align: center;
     color: white;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
 }
 h1{
