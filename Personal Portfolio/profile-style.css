@@ -1,0 +1,111 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 2px;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 25px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+section{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90%;
+
+}
+#Home .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: row; */
+}
+.sub-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    width: 70%;
+}
+.profile-image{
+    width: 100%;
+    background-image: url(assets/me.jpg);
+    background-size: cover;
+}
+
+#About .container{
+    display: grid; 
+    grid-template-columns: 2fr 2fr;
+    padding: 1%;
+}
+#About h2{
+    border: solid black;
+    width: fit-content;
+    justify-self: center;
+    
+}
+.stats-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.about-stats{
+    display: flex;
+    background-color: black;
+    color:white;
+    align-items:center ;
+    justify-content: center;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#Projects .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
