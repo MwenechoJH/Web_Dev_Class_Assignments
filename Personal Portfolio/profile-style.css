@@ -1,7 +1,10 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0px;
     margin: 0px;
+    font-family: 'poppins', sans-serif
 }
 header{
     display: flex;
@@ -17,10 +20,11 @@ nav{
     justify-content: center;
     position: fixed;
     top: 2px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.98);
     height: 25px;
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 0px 0px 0.5px 1px white;
 
 }
 nav ul{
@@ -57,9 +61,13 @@ section{
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100%;
-    /* display: flex;
-    flex-direction: row; */
 }
+#Home .sub-container{
+    height: 100%;
+    opacity: 0.9;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
 .sub-container{
     display:flex;
     flex-direction: column;
@@ -67,8 +75,26 @@ section{
     align-items: center;
 }
 .intro{
-    width: 70%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2%;
 }
+#name{
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px black;
+}
+#postion{
+    color: white;
+}
+#postion::before{
+    content: "WEB DEVELOPER";
+}
+
+
 .profile-image{
     width: 100%;
     background-image: url(assets/me.jpg);
@@ -88,16 +114,29 @@ section{
 }
 .stats-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
 .about-stats{
     display: flex;
-    background-color: black;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, grey, rgba(40, 40, 40));
     color:white;
     align-items:center ;
     justify-content: center;
+    width: 90%;;
+}
+.about-stats:hover{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgba(40, 40, 40));
+    /* background-image: linear-gradient(45deg, grey, rgba(40, 40, 40)); */
+}
+#Services, #Contact{
+    padding-top:20px;
+}
+#Services{
+    background-image: linear-gradient(30deg,rgb(33, 33, 33),black, rgb(35, 35, 35));
+    background-color: black;
+    color: white;
 }
 
 .service-container{
@@ -105,7 +144,80 @@ section{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+.service{
+    padding: 5%;
+}
+#Projects{
+    height: 50vh;
+}
 #Projects .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+#Projects a{
+    text-decoration: none;
+    color: white
+}
+.project{
+    display: flex;
+    background-image: linear-gradient(45deg, rgb(26, 26, 26, 0.5), black, rgb(26, 26, 26, 0.5));
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 1%;
+}
+.project:hover{
+    background-image: linear-gradient(45deg, black, black) 
+}
+
+
+
+@media (max-width:600px) {
+    body{
+        font-size: 15px;
+    }
+    section:nth-child(odd){
+        background-color: rgba(128, 128, 128, 0.158);
+    }
+    #Home .container{
+        background-image: url(assets/me.jpg);
+        grid-template-columns: 90% 10%;
+    }
+    #Home .sub-container{
+        height: 50%;
+        margin-top: 50%;
+        opacity: 0.9;
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+    .intro{
+
+        width:95%;
+        justify-self: baseline;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .profile-image{
+        opacity: 0;
+        top:1px;
+    }
+    #About .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .stats-container{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+       
+    }
+    .about-stats{
+        width: 180px;
+        font-size: 10px;
+    }
+    .what-i-do{
+        width: 90%;
+    }
 }
